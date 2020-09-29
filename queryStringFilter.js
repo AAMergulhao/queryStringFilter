@@ -2,12 +2,23 @@
 function queryStringFilter(queryString) {
   let paramsFiltered = {};
 
-  if (queryString.indexOf('?') != -1 && typeof queryString == 'string') {
+  if (typeof queryString == 'string' && queryString.indexOf('?') != -1) {
     let params = queryString.slice(queryString.indexOf('?') + 1);
     params = params.split('&');
 
-    for (let i in params) {
-      paramsFiltered[`${params[i].split('=')[0]}`] = params[i].split('=')[1]
+    let chave;
+    let valor;
+    if (params && params.length >= 1) {
+      for (let i in params) {
+        if (params[i].split('=') && params[i].split('=').length == 2) {
+          chave = params[i].split('=')[0];
+          valor = params[i].split('=')[1];
+
+          if (chave && chave != '' && valor && valor != '') {
+            paramsFiltered[chave] = valor
+          }
+        }
+      }
     }
   }
 
