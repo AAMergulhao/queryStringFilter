@@ -1,0 +1,15 @@
+{
+  "name": "queryStringFilter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Arthur Alves Mergulhão",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^26.4.2"
+  }
+}
