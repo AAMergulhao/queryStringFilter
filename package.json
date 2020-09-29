@@ -1,8 +1,8 @@
 {
-  "name": "queryStringFilter",
+  "name": "@mergulhao/query_string_filter",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "queryStringFilter.js",
   "scripts": {
     "test": "jest"
   },

@@ -6,16 +6,16 @@ function queryStringFilter(queryString) {
     let params = queryString.slice(queryString.indexOf('?') + 1);
     params = params.split('&');
 
-    let chave;
-    let valor;
+    let key;
+    let value;
     if (params && params.length >= 1) {
       for (let i in params) {
         if (params[i].split('=') && params[i].split('=').length == 2) {
-          chave = params[i].split('=')[0];
-          valor = params[i].split('=')[1];
+          key = params[i].split('=')[0];
+          value = params[i].split('=')[1];
 
-          if (chave && chave != '' && valor && valor != '') {
-            paramsFiltered[chave] = valor
+          if (key && key != '' && value && value != '') {
+            paramsFiltered[key] = key;
           }
         }
       }
