@@ -14,8 +14,8 @@ function queryStringFilter(queryString) {
           key = params[i].split('=')[0];
           value = params[i].split('=')[1];
 
-          if (key && key != '' && value && value != '') {
-            paramsFiltered[key] = key;
+          if ((key && key != '') && (value && value != '')) {
+            paramsFiltered[key] = value;
           }
         }
       }

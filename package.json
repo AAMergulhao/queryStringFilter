@@ -1,7 +1,7 @@
 {
   "name": "@mergulhao/query_string_filter",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Função que retorna todos os paramos passados em uma url no formato de query 'teste.com.br?p1=1&p2=2'",
   "main": "queryStringFilter.js",
   "scripts": {
     "test": "jest"
